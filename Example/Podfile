@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AFNHttp_Example' do
+  pod 'AFNHttp', :path => '../'
+
+  target 'AFNHttp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
