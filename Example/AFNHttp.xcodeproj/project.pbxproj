@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A9B057771728547DBC5A246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1BE298295F01BA661F22DDFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0A9B057771728547DBC5A246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1BE298295F01BA661F22DDFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1C1EAFD05A1B32B4D1A78D87 /* Pods_AFNHttp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNHttp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3956719F056D482345A64D4E /* Pods-AFNHttp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNHttp_Tests.release.xcconfig"; path = "Target Support Files/Pods-AFNHttp_Tests/Pods-AFNHttp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AFNHttp_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNHttp_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		834EFD7D101B193ADFDE963B /* Pods-AFNHttp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNHttp_Example.debug.xcconfig"; path = "Target Support Files/Pods-AFNHttp_Example/Pods-AFNHttp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7AF67388C50E1835C21927E /* Pods-AFNHttp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNHttp_Example.release.xcconfig"; path = "Target Support Files/Pods-AFNHttp_Example/Pods-AFNHttp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C3673DF17A6F5F186EF1909C /* AFNHttp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AFNHttp.podspec; path = ../AFNHttp.podspec; sourceTree = "<group>"; };
+		C3673DF17A6F5F186EF1909C /* AFNHttp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFNHttp.podspec; path = ../AFNHttp.podspec; sourceTree = "<group>"; };
 		F3065AE184CA36475AB79982 /* Pods-AFNHttp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNHttp_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AFNHttp_Tests/Pods-AFNHttp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F37B12EB5AF2639C80EF7901 /* Pods_AFNHttp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNHttp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				F3065AE184CA36475AB79982 /* Pods-AFNHttp_Tests.debug.xcconfig */,
 				3956719F056D482345A64D4E /* Pods-AFNHttp_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +497,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFNHttp/AFNHttp-Prefix.pch";
 				INFOPLIST_FILE = "AFNHttp/AFNHttp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +519,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFNHttp/AFNHttp-Prefix.pch";
 				INFOPLIST_FILE = "AFNHttp/AFNHttp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
